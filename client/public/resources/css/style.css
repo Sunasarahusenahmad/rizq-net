@@ -771,6 +771,12 @@ h6 {
 .loader:nth-child(8) { animation-delay:1600ms; }
 .loader:nth-child(9) { animation-delay:1800ms; }
 
+.hero-sec {
+  height: 100vh !important;
+  display: flex;
+  align-items: center;
+}
+
 .hero-heading {
   font-family: var(--caveat-font-family);
 }

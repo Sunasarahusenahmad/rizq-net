@@ -18,7 +18,7 @@ const Index = () => {
 
       <main>
         {/* Hero Section Start */}
-        <section className="bg-gradient">
+        <section className="bg-gradient hero-sec">
           <div className="rs-hero-shape1">
             <svg
               width="145"
@@ -90,9 +90,9 @@ const Index = () => {
                 ></circle>
               </svg>
           </div>
-          <div className="container py-20">
+          <div className="container">
             <div className="grid grid-cols-6 gap-4">
-              <div className="col-span-6 lg:col-span-3 sm:py-40 lg:py-46">
+              <div className="col-span-6 lg:col-span-3">
                 <div className="hidden sm:mb-8 sm:flex">
                   <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                     Transforming ideas into innovative digital solutions{" "}
@@ -139,9 +139,9 @@ const Index = () => {
 
         {/* Trusted Partners Section Start */}
         <section>
-          <div className="container bg-white">
+          <div className="container">
             <div className="trusted-partners">
-              <p className="trusted-partners-title text-center pt20 rs-btm-line">
+              <p className="common-title text-center pt100 rs-btm-line">
                 Trusted by Global Enterprises
               </p>
               <div className="trusted-partners-inner pt50 pb30">
