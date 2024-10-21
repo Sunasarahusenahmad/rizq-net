@@ -124,8 +124,8 @@ const Header = () => {
                 <a href="#" className="font-semibold leading-6 text-gray-900">
                     Technologies
                 </a>
-                <a href="#" className="font-semibold leading-6 text-gray-900">
-                    About Us
+                <a href="company" className="font-semibold leading-6 text-gray-900">
+                    Company
                 </a>
                 <a href="#" className="font-semibold leading-6 text-gray-900">
                     Portfolio
@@ -194,10 +194,10 @@ const Header = () => {
                         Technologies
                         </a>
                         <a
-                        href="#"
+                        href="company"
                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                         >
-                        About Us
+                        Company
                         </a>
                         <a
                         href="#"

@@ -52,12 +52,56 @@
 
 /* Apply 992 or greater */
 @media (min-width: 992px) {
+}
 
+/* Apply 768 or greater */
+@media (min-width: 768px) {
+  .d-md-block {
+      display: block !important;
+  }
+  .ps-xl-7 {
+    padding-left: 4rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .know-card-3 {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 640px) {
     .rs-firework::after {
       display: none;
+    }
+
+    .our-company-sec .company-heading-title {
+      font-size: 2.6rem;
+    }
+
+    .our-company-sec .company-desc {
+      font-size: 1.05rem;
+    }
+
+    .goal-title {
+      font-size: 1.75rem;
+    }
+
+    .goal-tagline {
+      font-size: 1.30rem;
+    }
+
+    .company-img-1 {
+      margin-bottom: 50px !important;
+    }
+
+    .company-svg-3 {
+      margin-top: -5rem !important;
+      margin-right: 1.5rem !important;
+    }
+
+    .know-title {
+      padding-left: 0px !important;
     }
 }
   

@@ -2,8 +2,6 @@ import React from "react";
 import Header from "../../Layouts/client/Header";
 import Footer from "../../Layouts/client/Footer";
 import { colours } from "../../Utils/Colours";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import TestimonialSlider from "../../Components/client/TestimonialSlider";
@@ -131,6 +129,16 @@ const Index = () => {
                     </a>
                   </div>
                 </div>
+              </div>
+              <div className="col-span-6 lg:col-span-3">
+              <img
+                        src={`../../../resources/images/about/home.gif`}
+                        alt="home gif"
+                        loading="lazy"
+                        width="1000"
+                        height="1000"
+                        style={{ mixBlendMode: 'multiply' }}
+                      />
               </div>
             </div>
           </div>

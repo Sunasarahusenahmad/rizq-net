@@ -33,7 +33,7 @@ const Footer = () => {
                         <div className="md-4 lg-3 mb30">
                             <h6 className="mb20">Quick links</h6>
                             <ul className="nav flex-column">
-                                <li className="nav-item pt10"><a className="nav-link" href="/about/v1">About us</a></li>
+                                <li className="nav-item pt10"><a className="nav-link" href="/about/v1">Company</a></li>
                                 <li className="nav-item pt10"><a className="nav-link" href="/contact/v1">Contact us</a></li>
                                 <li className="nav-item pt10"><a className="nav-link" href="/career">Career<span className="badge text-bg-danger ms-2">2 Job</span></a></li>
                                 <li className="nav-item pt10"><a className="nav-link" href="/career/single">Career detail</a></li>

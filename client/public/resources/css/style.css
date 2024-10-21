@@ -127,6 +127,8 @@ a {
 img {
     display: inline !important;
     vertical-align: middle !important;
+    max-width: 100%;
+    height: auto;
 }
 @media (min-width: 576px) {
   .sm-1 {
@@ -482,6 +484,34 @@ svg:not(:root) {
 
 .w-100 {
   width: 100% !important;
+}
+
+.w-75 {
+  width: 75% !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.w-25 {
+  width: 25% !important;
+}
+
+.start-0 {
+  left: 0 !important;
+}
+
+.top-0 {
+  top: 0 !important;
+}
+
+.end-0 {
+  right: 0 !important;
+}
+
+.d-none {
+  display: none !important;
 }
 
 .big-title {
@@ -867,12 +897,6 @@ h6 {
 
 /***************** Trusted Partners Section Start *********************/
 
-.trusted-partners {
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-
 .trusted-partners-title {
   font-size: 30px;
   font-family: var(--caveat-font-family);
@@ -1061,13 +1085,94 @@ h6 {
 
 .industry-circle {
   z-index: -1 !important;
-  margin-left: -.5rem !important;
+  margin-left: -.5rem;
   transform: translate(-50%, -50%) !important;
   left: 50% !important;
   top: 50% !important;
 }
 
 /***************** Industries Section End *********************/
+
+/***************** Company (About Us) Section Start *********************/
+
+.our-company-sec .company-heading-title {
+  font-size: 3.6rem;
+  font-family: var(--caveat-font-family);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.our-company-sec .company-desc {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.company-svg-1 {
+  z-index: 1 !important;
+  margin-left: -2.5rem !important;
+  margin-top: -3.5rem !important;
+}
+
+.company-svg-2 {
+  margin-left: -4rem !important;
+  left: 50% !important;
+}
+
+.company-svg-3 {
+  margin-top: -4rem !important;
+  margin-right: 5.5rem !important;
+}
+
+.goal-title {
+  font-size: 2.75rem;
+  line-height: 1.25;
+  font-family: var(--caveat-font-family);
+}
+
+.goal-tagline {
+  font-family: var(--caveat-font-family);
+  font-size: 1.75rem;
+}
+
+.icons-center {
+  display: inline-flex;
+  align-items: center;
+}
+
+.company-btn-white {
+  background: #fff;
+  color: #222427;
+}
+
+.company-btn {
+  letter-spacing: .5px;
+  position: relative;
+  overflow: hidden;
+  outline: 0;
+  margin-bottom: 6px;
+  padding: 10px 20px;
+  border-radius: var(--card-border-radius);
+}
+
+/***************** Company (About Us) Section End *********************/
+
+/***************** Know Section Start *********************/
+
+
+/***************** Know Section End *********************/
+
+.know-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.icon-link {
+  display: inline-flex;
+  gap: .375rem;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 16px;
+}
 
 /***************** Footer Start *********************/
 
