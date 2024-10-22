@@ -2,6 +2,8 @@ import React from 'react'
 import Header from "../../Layouts/client/Header";
 import Footer from "../../Layouts/client/Footer";
 import { colours } from "../../Utils/Colours";
+import TestimonialSliderTwo from '../../Components/client/TestimonialSliderTwo';
+import FaqAccordion from '../../Components/client/FaqAccordion';
 
 const Company = () => {
   return (
@@ -11,6 +13,8 @@ const Company = () => {
         {/* Header End */}
 
         <main>
+
+            {/* About Hero Section Start */}
             <section className='our-company-sec mt100 mb100'>
                 <div className='container'>
                     <div className="row">
@@ -53,7 +57,9 @@ const Company = () => {
                     </div>
                 </div>
             </section>
+            {/* About Hero Section End */}
 
+            {/* Know About Section Start */}
             <section className="know-sec">
                 <div className="container">
                     <div className="row g-4 items-center">
@@ -171,11 +177,70 @@ const Company = () => {
                     </div>
                 </div>
             </section>
+            {/* Know About Section End */}
 
-            <section className='our-company-sec mt100 mb100'>
-
+            {/* Our Client Section Start */}
+            <section className="mt100 mb100 pt80 pb80 client-review-sec bg-dark text-white">
+                <div className="container">
+                    <TestimonialSliderTwo />
+                </div>
             </section>
+            {/* Our Client Section End */}
 
+            {/* Our Location Section Start */}
+            <section className='our-location-sec'>
+                <div className="container pt100 pb100 bg-map">
+                    <div className="text-center">
+                        <h2 className="mb-4 common-title">We're expanding across World</h2>
+                        <p className="mb-6 common-desc">RizqNet customer support is available free of charge across World. Connection <br/> charges may vary depending on your mobile network provider.</p>
+                        <div className="row text-start mt30 justify-center">
+                            <div className="location-card margin20">
+                                <div className="card border padding30">
+                                    <div className="flag mb20"><img className="flag-img rounded-circle" src={'../../../resources/images/about/india-flag.svg'} alt="india flag" /></div>
+                                    <h6 className="card-title mb-3"><a href="#"> India</a></h6>
+                                    <ul className="location-group">
+                                        <li className="flex mb-3">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" role="img" focusable="false" className="me-2 mt-1">
+                                                <path
+                                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+                                                ></path>
+                                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"></path>
+                                            </svg>
+                                            107, Orchid Complex, Pirojpura Road, Chhapi - 385210
+                                        </li>
+                                        <li className="flex icons-center mb-3">
+                                            <svg width="20" height="20" viewBox="-5.0 -10.0 110.0 135.0" fill="currentColor" role="img" focusable="false" className="me-2">
+                                                <path d="m72.371 96.379c-28.98-6.2148-56.977-36.02-67.652-63.043-1.1133-2.7773-1.3906-5.8164-0.79297-8.75 0.60156-2.9297 2.0469-5.6211 4.1602-7.7383l10.949-10.953c1.5781-1.5586 3.7461-2.3672 5.9609-2.2266 2.2109 0.14062 4.2617 1.2188 5.6289 2.9648 2.957 3.8516 7.3828 9.6055 10.613 13.832v0.003906c3.3164 4.3633 2.9102 10.504-0.95312 14.387l-3.3672 3.3672c-0.52344 0.52734 0.55078 5.6992 9.7305 15.203 7.0938 7.0859 12.215 9.1953 14.633 9.8164 0.57031-0.078126 1.8203-1.4258 2.4258-2.0742 1.7695-2.4258 4.4375-4.0469 7.4102-4.5 2.9727-0.45312 6 0.30078 8.4141 2.0938 4.2266 3.2305 9.9805 7.6562 13.832 10.613h0.003907c1.7617 1.3555 2.8555 3.4062 2.9961 5.6289 0.14062 2.2188-0.68359 4.3945-2.2578 5.9609l-10.953 10.949c-2.8594 2.8594-6.7383 4.4648-10.781 4.4648zm-47.855-86.508c-0.39844 0-0.78516 0.16016-1.0625 0.44531l-10.949 10.953c-2.5586 2.5664-3.332 6.4102-1.9688 9.7656 9.2148 24.605 33.758 49.16 58.363 58.402 3.3672 1.3906 7.2422 0.625 9.832-1.9414l10.953-10.949c0.32031-0.28906 0.48828-0.70703 0.46484-1.1367-0.027344-0.42969-0.24219-0.82812-0.58984-1.0781-3.8438-2.957-9.6016-7.375-13.82-10.609-6.8945-4.4688-8.6289 8.0664-16.227 5.5117-3.4961-0.89062-9.5469-3.6602-17.32-11.43-25.781-27.297 0.0625-22.906-5.9141-33.543-3.2344-4.2188-7.6523-9.9727-10.609-13.82-0.26953-0.36328-0.69922-0.57422-1.1523-0.57031z"/>
+                                            </svg>
+                                            Call: +91 94276 28497
+                                        </li>
+                                        <li className="flex icons-center">
+                                            <svg width="20" height="20" viewBox="-5.0 -10.0 110.0 135.0" fill="currentColor" role="img" focusable="false" className="me-2">
+                                                <path d="m72.371 96.379c-28.98-6.2148-56.977-36.02-67.652-63.043-1.1133-2.7773-1.3906-5.8164-0.79297-8.75 0.60156-2.9297 2.0469-5.6211 4.1602-7.7383l10.949-10.953c1.5781-1.5586 3.7461-2.3672 5.9609-2.2266 2.2109 0.14062 4.2617 1.2188 5.6289 2.9648 2.957 3.8516 7.3828 9.6055 10.613 13.832v0.003906c3.3164 4.3633 2.9102 10.504-0.95312 14.387l-3.3672 3.3672c-0.52344 0.52734 0.55078 5.6992 9.7305 15.203 7.0938 7.0859 12.215 9.1953 14.633 9.8164 0.57031-0.078126 1.8203-1.4258 2.4258-2.0742 1.7695-2.4258 4.4375-4.0469 7.4102-4.5 2.9727-0.45312 6 0.30078 8.4141 2.0938 4.2266 3.2305 9.9805 7.6562 13.832 10.613h0.003907c1.7617 1.3555 2.8555 3.4062 2.9961 5.6289 0.14062 2.2188-0.68359 4.3945-2.2578 5.9609l-10.953 10.949c-2.8594 2.8594-6.7383 4.4648-10.781 4.4648zm-47.855-86.508c-0.39844 0-0.78516 0.16016-1.0625 0.44531l-10.949 10.953c-2.5586 2.5664-3.332 6.4102-1.9688 9.7656 9.2148 24.605 33.758 49.16 58.363 58.402 3.3672 1.3906 7.2422 0.625 9.832-1.9414l10.953-10.949c0.32031-0.28906 0.48828-0.70703 0.46484-1.1367-0.027344-0.42969-0.24219-0.82812-0.58984-1.0781-3.8438-2.957-9.6016-7.375-13.82-10.609-6.8945-4.4688-8.6289 8.0664-16.227 5.5117-3.4961-0.89062-9.5469-3.6602-17.32-11.43-25.781-27.297 0.0625-22.906-5.9141-33.543-3.2344-4.2188-7.6523-9.9727-10.609-13.82-0.26953-0.36328-0.69922-0.57422-1.1523-0.57031z"/>
+                                            </svg>
+                                            Call: +91 91570 37748
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* Our Location Section End */}
+
+            {/* Faq Section Start */}
+            <section className="faq-sec">
+                <div className="container">
+                    <div className="row">
+                        <div className="md-5"><h3 className="mb20 common-title">Frequently Asked Questions</h3></div>
+                        <div className="md-7">
+                            <FaqAccordion />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* Faq Section End */}
         </main>
 
         {/* Footer Start */}
