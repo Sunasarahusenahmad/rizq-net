@@ -1,27 +1,75 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const faqData = [
   {
-    question: 'How much does a website cost?',
+    question: "What is custom software development?",
     answer: (
       <div>
         <p>
-          While we would love to give a definitive, fixed price for a website, it really depends on the specific needs for each individual business. If one business needs a website comprised of five pages, while another has a substantially larger site of over 100 pages - obviously those projects are going to command different price points.
+          Custom software development is the process of designing and building
+          software solutions specifically tailored to the needs of your
+          business. Unlike off-the-shelf software, custom software is built with
+          your company's unique requirements in mind, ensuring that it fits
+          perfectly with your workflows and processes.
         </p>
-        <p>With that being said - here are some general guidelines on what to expect from a pricing standpoint.</p>
         <p>
-          If you can get by with a small website (between 3 - 10 pages) using a pre-designed template, you can expect to pay approximately $2,500.00. A mid-sized website that has anywhere from 11 - 25 pages, but still uses a pre-made template, will be between $3,000.00 - $5,000.00. If you have a lot of pages, are looking for something completely custom, or are looking for something that has special functionality such as eCommerce, custom calculators, or integrations with other services, you may be looking at anywhere from $10,000 - $20,000.
+          Whether you're looking for a custom CRM, an eCommerce platform, or a
+          specialized application for your internal operations, we can help you
+          build a solution that grows with your business.
         </p>
-        <p>Ultimately, the takeaway here is that we can accommodate projects of just about any budget - so long as expectations are set accordingly.</p>
       </div>
     ),
   },
   {
-    question: 'Are there any monthly fees?',
+    question:
+      "What is the typical timeline for a software development project?",
+    answer: (
+      <div>
+        <p>
+          The timeline for a software development project depends on various
+          factors such as the scope, complexity, and features required. Smaller
+          projects with fewer features may take anywhere from 2 to 4 months,
+          while larger projects could take 6 months or more.
+        </p>
+        <p>
+          During the initial consultation, we will assess your requirements and
+          provide an estimated timeline. We work closely with you to ensure that
+          deadlines are met without compromising on quality.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Do you offer ongoing IT support?",
     answer: (
       <p>
-        This will vary depending on the type of project. For logo & branding projects, fees will be one-time costs. For website projects, we will typically charge a monthly fee, depending on the level of service you choose. To view a full list of our monthly packages, click here.
+        Yes, we provide ongoing IT support as part of our services. Whether you
+        need help with network management, cloud solutions, software
+        maintenance, or troubleshooting technical issues, our team is available
+        to assist. Our support packages are flexible, and we can tailor them to
+        suit your specific needs, whether you're looking for 24/7 support or
+        periodic maintenance.
       </p>
+    ),
+  },
+  {
+    question: "How do you ensure the security of my systems?",
+    answer: (
+      <div>
+        <p>
+          Security is one of our top priorities. We implement industry-standard
+          practices such as encryption, two-factor authentication, regular
+          software updates, and vulnerability assessments to protect your
+          systems from cyber threats. We also offer ongoing security monitoring
+          and incident response services to ensure that any potential risks are
+          addressed promptly.
+        </p>
+        <p>
+          Additionally, we provide training and best practices to your staff to
+          help them identify potential threats and ensure they are following
+          security protocols.
+        </p>
+      </div>
     ),
   },
 ];
@@ -40,9 +88,16 @@ const FaqAccordion = () => {
   return (
     <ul className="accordion-list">
       {faqData.map((item, index) => (
-        <li key={index} className={activeIndex === index ? 'active' : ''} onClick={() => toggleAccordion(index)}>
+        <li
+          key={index}
+          className={activeIndex === index ? "active" : ""}
+          onClick={() => toggleAccordion(index)}
+        >
           <h3>{item.question}</h3>
-          <div className="answer" style={{ display: activeIndex === index ? 'block' : 'none' }}>
+          <div
+            className="answer"
+            style={{ display: activeIndex === index ? "block" : "none" }}
+          >
             {item.answer}
           </div>
         </li>
